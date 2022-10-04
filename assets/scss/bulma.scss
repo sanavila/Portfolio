@@ -1,0 +1,49 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+
+@import "./common";
+
+// Set variables
+@import "./variables.scss";
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: mergeColorMaps((
+    
+        "primary": (
+                $primary,
+                $primary-invert,
+                $primary-light,
+                $primary-dark,
+        ),
+        "secondary": (
+                $secondary,
+                $secondary-invert,
+                $secondary-light,
+                $secondary-dark,
+        ), 
+        "tertiary": (
+            $tertiary,
+            $tertiary-invert,
+            $tertiary-light,
+            $tertiary-dark,
+        )  ,
+            
+        "quaternary": (
+            $quaternary,
+            $quaternary-invert,
+            $quaternary-light,
+            $quaternary-dark,
+        ),
+        "quinary": (
+            $quinary,
+            $quinary-invert,
+            $quinary-light,
+            $quinary-dark,
+        ),
+),
+        $custom-colors);
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

@@ -10,7 +10,7 @@ type State = typeof state;
 
 const mutations = {
     setRepoList(state: State, list: []) {
-        state.repoList = list;
+        state.repoList = list.sort((first, second) => (new Date(second.updated_at)).getTime() - (new Date(first.updated_at)).getTime());
     }
 }
 const actions = {

@@ -1,14 +1,15 @@
 <template>
-  <section class="section">
+  <section>
    <About />
    <Repositories />
+   <Languages/>
   </section>
 </template>
-
 <script>
 import Card from '~/components/Card'
 import About from '~/components/About.vue';
 import Repositories from '~/components/Repositories.vue';
+import Languages from '~/components/Languages.vue';
 
 
 export default {
@@ -16,7 +17,8 @@ export default {
   components: {
     Card,
     About,
-    Repositories
+    Repositories,
+    Languages
 }
 }
 </script>

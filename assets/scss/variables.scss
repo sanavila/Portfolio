@@ -1,0 +1,29 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+
+// Set your colors
+$primary: #5C0B2F;
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+$primary-invert: findColorInvert($primary);
+
+$secondary: #F595C0;
+$secondary-light: findLightColor($secondary);
+$secondary-dark: findDarkColor($secondary);
+$secondary-invert: findColorInvert($secondary);
+
+$tertiary: #DB1A71;
+$tertiary-light: findLightColor($tertiary);
+$tertiary-dark: findDarkColor($tertiary);
+$tertiary-invert: findColorInvert($tertiary);
+
+$quaternary: #63545B;
+$quaternary-light: findLightColor($quaternary);
+$quaternary-dark: findDarkColor($quaternary);
+$quaternary-invert: findColorInvert($quaternary);
+
+$quinary: #A81457;
+$quinary-light: findLightColor($quinary);
+$quinary-dark: findDarkColor($quinary);
+$quinary-invert: findColorInvert($quinary);
