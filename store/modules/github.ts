@@ -1,15 +1,16 @@
 import { getReposRequest } from "~/services/ApiGithub";
 import { ActionContext } from "vuex/types";
+import { Repositorie } from "../types/github-types";
 
 const state = {
-    repoList: []
+    repoList: [] as Repositorie[]
 };
 
 type State = typeof state;
 
 
 const mutations = {
-    setRepoList(state: State, list: []) {
+    setRepoList(state: State, list: Repositorie[]) {
         state.repoList = list.sort((first, second) => (new Date(second.updated_at)).getTime() - (new Date(first.updated_at)).getTime());
     }
 }

@@ -1,0 +1,105 @@
+@import "@/assets/scss/variables.scss";
+.timeline {
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+
+  @media screen and (max-width: 768px) {
+    gap: 0;
+  }
+}
+
+.timeline-tag {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  .timeline-badge {
+    background-color: #fcfcfc;
+    color: #000;
+    border-radius: 50%;
+    font-weight: 500;
+    height: 23px;
+    width: 23px;
+    &.large {
+      height: 30px;
+      width: 30px;
+    }
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .timeline-badge.primary {
+    color: $primary !important;
+    background-color: $primary !important;
+    border: 2px solid $primary !important;
+  }
+
+  .timeline-badge.success {
+    color: $secondary !important;
+    background-color: $secondary !important;
+    border: 2px solid $secondary !important;
+  }
+
+  .timeline-badge.warning {
+    color: $white !important;
+    background-color: $warning !important;
+    border: 2px solid $warning !important;
+  }
+
+  .timeline-badge.danger {
+    color: $white !important;
+    background-color: $danger !important;
+    border: 2px solid $danger !important;
+  }
+
+  .timeline-badge.info {
+    color: $white !important;
+    background-color: $info !important;
+    border: 2px solid $info !important;
+  }
+
+
+  .progress-line {
+    background-color: $tertiary !important;
+    width: 3px;
+    &.primary {
+      background-color: $tertiary !important;
+    }
+    display: flex;
+    flex: 1;
+  }
+}
+
+.timeline-panel {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  padding: 0px 20px 20px 30px;
+  max-width: 90vw;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.timeline-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.timeline-title {
+  font-weight: 600;
+  margin-top: 4px;
+  color: inherit;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 10px;
+  }
+}
+
+.timeline-body {
+  padding: 10px 0 10px 0;
+}

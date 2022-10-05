@@ -1,0 +1,13 @@
+.flex-1 {
+    flex: 1;
+}
+
+.icon.is-big {
+    width: 5rem;
+    height: 5rem;
+
+    .mdi-24px.mdi-set,
+    .mdi-24px.mdi:before {
+        font-size: 84px !important;
+    }
+}
