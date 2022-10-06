@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="main-content columns">
-      <div class="container column is-10">
+    <section>
+      <div class="container column is-11">
         <Nuxt />
       </div>
     </section>
