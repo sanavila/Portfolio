@@ -1,13 +1,5 @@
-<template>
-  <section
-    style="
-      background: linear-gradient(
-        to right,
-        rgba(255, 0, 0, 0),
-        rgba(255, 99, 71, 0.6)
-      );
-    "
-  >
+<template >
+  <section>
     <About />
     <Trajectories />
     <Repositories />
@@ -33,3 +25,12 @@ export default {
   },
 };
 </script>
+<style scoped>
+  section {
+    background: linear-gradient(
+      to right,
+      #0000,
+      #ff634799
+    );
+  }
+</style>

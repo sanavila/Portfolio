@@ -14,23 +14,26 @@
           target="_blank"
         >
           <img
+            v-if="repo.language !== 'Vue'"
             :src="`https://raw.githubusercontent.com/${repo.full_name}/${repo.default_branch}/logo.webp`"
-            @error="defaultLogo"
+            @error="(event) => defaultLogo(event, repo)"
             width="200px"
             :alt="repo.name.replaceAll('_', ' ')"
             :title="repo.name.replaceAll('_', ' ')"
           />
+          <Logo
+            v-else
+            :images="[require('@/assets/logos/logoVue.png')]"
+            :title="repo.name.replaceAll('_', ' ')"
+            titleColor="rgb(72 199 142)"
+            barColor="rgb(72 199 142)"
+            class="logo"
+          />
         </a>
       </nav>
       <template v-if="isLoad">
-        <nav class="card" 
-          v-for="index of 15"
-          :key="`repo_${index}`">
-
-          <b-skeleton
-            width="200px"
-            height="200px"
-          />
+        <nav class="card" v-for="index of 15" :key="`repo_${index}`">
+          <b-skeleton width="200px" height="200px" />
         </nav>
       </template>
     </section>
@@ -38,6 +41,7 @@
 </template>
 <script>
 import { mapActions, mapGetters } from "vuex";
+import Logo from "./Logo.vue";
 
 export default {
   name: "Repositories",
@@ -60,13 +64,15 @@ export default {
       await this.listRequest();
       this.isLoad = false;
     },
-    defaultLogo(event) {
+    defaultLogo(event, repo) {
       event.target.src = require("@/assets/images/default.webp");
+      repo.status = "error";
     },
   },
   beforeMount() {
     this.loadRepoList();
   },
+  components: { Logo },
 };
 </script>
 <style lang="scss" scoped>
@@ -75,5 +81,8 @@ section {
 }
 nav.card {
   max-height: 200px;
+}
+.logo {
+  zoom: 0.4;
 }
 </style>
