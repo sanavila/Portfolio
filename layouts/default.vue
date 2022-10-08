@@ -29,3 +29,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+section {
+  background-color: #485465;
+  color: aliceblue;
+}
+</style>

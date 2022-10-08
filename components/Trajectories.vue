@@ -1,10 +1,11 @@
 <template>
   <aside>
+    <h1 class="is-size-1 is-flex is-justify-content-center">Quem sou eu?</h1>
     <timeline-item
       statusIcon="school"
       title="Ensino Médio"
       statusSize="large"
-      statusColor="primary"
+      statusColor="has-background-primary"
       ><p class="has-text-justified">
         Desde os meus 6 anos, quando eu aprendi a ler, eu gostava de aprender
         sobre as coisas, e minha brincadeira favorita era ensinar um "público"
@@ -24,7 +25,7 @@
       title="Intercâmbio Linguístico"
       stepValue="1"
       statusSize="large"
-      statusColor="primary"
+      statusColor="has-background-primary"
       ><p class="has-text-justified">
         Essa história é muito boa e tenho muito orgulho, eu consegui através dos
         meus estudos! O que eu gosto de frizar é: ESTUDOS! Eram oito mil alunos
@@ -42,21 +43,31 @@
       title="Primeiro Emprego"
       stepValue="3"
       statusSize="large"
-      statusColor="primary"
-    />
+      statusColor="has-background-primary"
+      ></timeline-item><!--<p>
+        Meu primeiro emprego foi em uma fábrica de calçados. Eu fiz parte de uma
+        turma de aprendizes que trabalhava na produção e eu amava cada dia de
+        trabalho. De tarde nós tinhamos aula e eu me esforcei pra ser um pouco
+        mais criativa, porque no final do curso eu tive que desenhar o modelo de
+        uma sandália pro desfile da turma. Mas sempre gostei muito de viagens e
+        conhecer lugares novos, eu ficava pensando que eu deveria fazer algo e
+        escolher uma profissão que me abrisse um mundo de possíbilidades e que
+        ao mesmo tempo me fizesse se sentir útil para muitas pessoas.
+      </p></timeline-item-->
+    >
     <timeline-item
       statusIcon="school"
       title="Graduação"
       stepValue="1"
       statusSize="large"
-      statusColor="primary"
+      statusColor="has-background-primary"
     />
     <timeline-item
       statusIcon="laptop"
       title="Iniciação como Dev"
       stepValue="1"
       statusSize="large"
-      statusColor="primary"
+      statusColor="has-background-primary"
       hideProgressLine
     />
   </aside>

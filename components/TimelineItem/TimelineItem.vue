@@ -20,7 +20,7 @@
       <div
         v-if="!hideProgressLine"
         class="progress-line"
-        :class="`${statusColor === 'primary' ? 'primary' : ''}`"
+        :class="statusColor"
       />
     </div>
     <div class="timeline-panel">

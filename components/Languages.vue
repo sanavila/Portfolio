@@ -1,29 +1,13 @@
 <template>
   <aside>
-    <h1 class="is-size-2">Conhecimentos</h1>
-    <b-carousel
-      autoplay
-      v-model="values"
-      :items-to-list="increment"
-      repeat
-      :interval="interval"
-      :animated="animated"
-    >
-      <b-carousel-item
-        v-for="(group, index_group) of groupLanguageList"
-        :key="`group_${index_group}`"
-      >
-        <img 
-          v-for="(lang, index) of group"
-          :key="`lang_${index}`"
-          :src="lang.path"
-          :alt="lang.alt"
-          width="25%"
-          class="carousel-image px-5"
-          
-        />
-      </b-carousel-item>
-    </b-carousel>
+    <h1 class="is-size-1 is-flex is-justify-content-center">Conhecimentos</h1>
+    <img
+      v-for="(logo, index) of languagesList"
+      :key="`logo_${index}`"
+      :src="logo.path"
+      :alt="logo.alt"
+      class="pl-3 images"
+    />
   </aside>
 </template>
 <script>
@@ -31,11 +15,6 @@ export default {
   name: "Languages",
   data() {
     return {
-      arrow: true,
-      values: 0,
-      increment: 1,
-      animated: "slide",
-      interval: 2000,
       languagesList: [
         { path: require("@/assets/images/css.png"), alt: "Logo CSS" },
         { path: require("@/assets/images/github.png"), alt: "Logo Github" },
@@ -60,7 +39,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.carousel-image {
-  max-height: 160px;
+aside {
+  padding: 30px;
 }
 </style>

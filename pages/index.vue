@@ -1,9 +1,9 @@
 <template >
   <section>
     <About />
+    <!-- <Languages /> -->
     <Trajectories />
     <Repositories />
-    <Languages />
     <Libras />
   </section>
 </template>
@@ -26,11 +26,8 @@ export default {
 };
 </script>
 <style scoped>
-  section {
-    background: linear-gradient(
-      to right,
-      #0000,
-      #ff634799
-    );
-  }
+/*section {
+    background: #464a4e;
+    color: aliceblue;
+  }*/
 </style>

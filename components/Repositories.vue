@@ -1,5 +1,6 @@
 <template>
   <aside>
+    <h1 class="is-size-1 is-flex is-justify-content-center">Conheça meus projetos</h1>
     <section class="is-flex is-flex-wrap-wrap is-justify-content-center">
       <nav
         class="card"
@@ -23,6 +24,7 @@
           />
           <Logo
             v-else
+            :name="repo.name.replaceAll('_', ' ')"
             :images="[require('@/assets/logos/logoVue.png')]"
             :title="repo.name.replaceAll('_', ' ')"
             titleColor="rgb(72 199 142)"
@@ -84,5 +86,8 @@ nav.card {
 }
 .logo {
   zoom: 0.4;
+}
+nav:hover {
+  transform: scale(1.1);
 }
 </style>

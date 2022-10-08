@@ -63,11 +63,7 @@
 
 
   .progress-line {
-    background-color: $tertiary !important;
     width: 3px;
-    &.primary {
-      background-color: $tertiary !important;
-    }
     display: flex;
     flex: 1;
   }

@@ -23,7 +23,7 @@
         x="50%"
         y="310"
         font-size="3rem"
-        style="text-anchor: middle;"
+        style="text-anchor: middle"
         :fill="titleColor"
         font-family="Aboreto"
       >
@@ -82,7 +82,9 @@ export default {
   },
   methods: {
     positionImage(index) {
-      return this.images.length < 2 ? this.width / 4 : index === 0
+      return this.images.length < 2
+        ? this.width / 4
+        : index === 0
         ? this.paddingX
         : this.paddingX + (this.gap + this.imageWidth) * index;
     },
