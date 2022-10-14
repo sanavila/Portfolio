@@ -3,7 +3,7 @@
     <h1 class="is-size-1 is-flex is-justify-content-center">Quem sou eu?</h1>
     <timeline-item
       statusIcon="school"
-      title="Ensino Médio"
+      title="Ensino Médio | 2013 - 2015"
       statusSize="large"
       statusColor="has-background-primary"
       ><p class="has-text-justified">
@@ -22,7 +22,7 @@
     >
     <timeline-item
       statusIcon="airplane"
-      title="Intercâmbio Linguístico"
+      title="Intercâmbio Linguístico | 2018"
       stepValue="1"
       statusSize="large"
       statusColor="has-background-primary"
@@ -40,7 +40,7 @@
     >
     <timeline-item
       statusIcon="account-hard-hat"
-      title="Primeiro Emprego"
+      title="Primeiro Emprego | 2020"
       stepValue="3"
       statusSize="large"
       statusColor="has-background-primary"
@@ -60,7 +60,7 @@
     </timeline-item>
     <timeline-item
       statusIcon="school"
-      title="Graduação"
+      title="Graduação | 2020 - Atualmente"
       stepValue="1"
       statusSize="large"
       statusColor="has-background-primary"
@@ -70,8 +70,8 @@
         em front-end, tive ajuda de profissionais incríveis que estão a muito
         tempo na carreira, participei de bootcamps e cursos voltados para área
         que me fizeram abrir muito mais a mente e saber das possíbilidades do
-        que nós da área tech podemos ser capazes de fazer e o quanto nosso trabalho é
-        importante para todas as áreas.
+        que nós da área tech podemos ser capazes de fazer e o quanto nosso
+        trabalho é importante para todas as áreas. 
       </p>
     </timeline-item>
   </aside>

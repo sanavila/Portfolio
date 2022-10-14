@@ -1,7 +1,6 @@
 <template >
   <section>
     <About />
-    <!-- <Languages /> -->
     <Trajectories />
     <Repositories />
     <Libras />
@@ -26,8 +25,8 @@ export default {
 };
 </script>
 <style scoped>
-/*section {
-    background: #464a4e;
-    color: aliceblue;
-  }*/
+/* section { */
+    /* background-image: url("../assets/profile/linguagens-2021-1152x648.jpg"); */
+    /* color: aliceblue; */
+  /* } */
 </style>

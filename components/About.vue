@@ -2,8 +2,8 @@
   <article>
       <h1 class="is-size-1 is-flex is-justify-content-center">Bem Vindo(a)!</h1>   
     <section class="is-flex pl-4">
-      <img src="../assets/profile/perfil.png" alt="Mulher negra" />
-      <p>testetestes</p>
+      <img src="../assets/images/default.webp" alt="Mulher negra" />
+      <h2 class="is-size-1 is-flex is-justify-content-center">RUTE ÁVILA</h2>
     </section>
   </article>
 </template>

@@ -5,7 +5,7 @@
       <nav
         class="card"
         v-for="(repo, index) of repoList"
-        :key="`repo_${index}`"
+        :key="`repo_${index}`"  
       >
         <a
           :href="repo.html_url"
