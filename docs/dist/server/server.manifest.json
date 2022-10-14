@@ -1,0 +1,27 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/about.js": "components/about.js",
+    "components/languages.js": "components/languages.js",
+    "components/libras.js": "components/libras.js",
+    "components/logo.js": "components/logo.js",
+    "components/repositories.js": "components/repositories.js",
+    "components/timeline-item-script.js": "components/timeline-item-script.js",
+    "components/timeline-item.js": "components/timeline-item.js",
+    "components/trajectories.js": "components/trajectories.js",
+    "pages/index.js": "pages/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/about.js": "components/about.js.map",
+    "components/languages.js": "components/languages.js.map",
+    "components/libras.js": "components/libras.js.map",
+    "components/logo.js": "components/logo.js.map",
+    "components/repositories.js": "components/repositories.js.map",
+    "components/timeline-item-script.js": "components/timeline-item-script.js.map",
+    "components/timeline-item.js": "components/timeline-item.js.map",
+    "components/trajectories.js": "components/trajectories.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "server.js": "server.js.map"
+  }
+}

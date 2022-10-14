@@ -1,0 +1,26 @@
+{
+  "About": {
+    "description": "Auto imported from components/About.vue"
+  },
+  "Languages": {
+    "description": "Auto imported from components/Languages.vue"
+  },
+  "Libras": {
+    "description": "Auto imported from components/Libras.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "Repositories": {
+    "description": "Auto imported from components/Repositories.vue"
+  },
+  "Trajectories": {
+    "description": "Auto imported from components/Trajectories.vue"
+  },
+  "TimelineItemScript": {
+    "description": "Auto imported from components/TimelineItem/TimelineItem.script.js"
+  },
+  "TimelineItem": {
+    "description": "Auto imported from components/TimelineItem/TimelineItem.vue"
+  }
+}
