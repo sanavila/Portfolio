@@ -46,12 +46,12 @@ jobs:
         run: yarn
 
       - name: 🏗️ Build project
-        run: yarn build
+        run: yarn generate
 
       - name: Deploy 🧪
         uses: test-room-7/action-update-file@v1
         with:
           branch: demo
-          file-path: dist/**/*
+          file-path: docs/**/*
           commit-msg: deploy system
           github-token: ${{ secrets.GITHUB_TOKEN }}
