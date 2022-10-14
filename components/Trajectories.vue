@@ -44,31 +44,35 @@
       stepValue="3"
       statusSize="large"
       statusColor="has-background-primary"
-      ></timeline-item><!--<p>
+    >
+      <p>
         Meu primeiro emprego foi em uma fábrica de calçados. Eu fiz parte de uma
         turma de aprendizes que trabalhava na produção e eu amava cada dia de
-        trabalho. De tarde nós tinhamos aula e eu me esforcei pra ser um pouco
-        mais criativa, porque no final do curso eu tive que desenhar o modelo de
-        uma sandália pro desfile da turma. Mas sempre gostei muito de viagens e
-        conhecer lugares novos, eu ficava pensando que eu deveria fazer algo e
-        escolher uma profissão que me abrisse um mundo de possíbilidades e que
-        ao mesmo tempo me fizesse se sentir útil para muitas pessoas.
-      </p></timeline-item-->
-    >
+        trabalho e nossas aulas durante a tarde. O projeto final foi desenhar e
+        confeccionar um modelo novo de sapato para o desfile final. Apesar de
+        ter sido uma experiência legal, foi durante esse período que decidi
+        começar na faculdade de Análise e Desenvolvimento de Sistemas, eu estava
+        o tempo todo pensando em construir uma carreira sólida que me abrisse
+        oportunidades não só no Brasil e que eu fizesse parte de um grupo de
+        profissionais que fazem trabalhos incríveis que facilitam e revolucionam
+        a vida das pessoas através da tecnologia.
+      </p>
+    </timeline-item>
     <timeline-item
       statusIcon="school"
       title="Graduação"
       stepValue="1"
       statusSize="large"
       statusColor="has-background-primary"
-    />
-    <timeline-item
-      statusIcon="laptop"
-      title="Iniciação como Dev"
-      stepValue="1"
-      statusSize="large"
-      statusColor="has-background-primary"
-      hideProgressLine
-    />
+    >
+      <p>
+        Durante a graduação eu comecei a fazer projetos, principalmente focados
+        em front-end, tive ajuda de profissionais incríveis que estão a muito
+        tempo na carreira, participei de bootcamps e cursos voltados para área
+        que me fizeram abrir muito mais a mente e saber das possíbilidades do
+        que nós da área tech podemos ser capazes de fazer e o quanto nosso trabalho é
+        importante para todas as áreas.
+      </p>
+    </timeline-item>
   </aside>
 </template>

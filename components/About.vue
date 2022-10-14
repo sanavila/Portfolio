@@ -1,22 +1,20 @@
 <template>
   <article>
-    <h1 class="is-size-2">Sobre mim</h1>
-    <section class="is-flex">
-      <img src="../assets/profile/profileTeste.webp" alt="Mulher negra">
-      <div class="pl-4">
-        <p>Olá, tudo bem?</p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it t
-        </p>
-      </div>
+      <h1 class="is-size-1 is-flex is-justify-content-center">Bem Vindo(a)!</h1>   
+    <section class="is-flex pl-4">
+      <img src="../assets/profile/perfil.png" alt="Mulher negra" />
+      <p>testetestes</p>
     </section>
   </article>
 </template>
 
 <script>
-    export default {
-        name: 'About'
-    }
+export default {
+  name: "About",
+};
 </script>
+<style scoped>
+img {
+  width: 300px;
+}
+</style>
