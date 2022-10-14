@@ -32,6 +32,6 @@ export default {
 <style scoped>
 section {
   background: #061928;
-  color: white;
+  color: #1fddff;     
 }
 </style>

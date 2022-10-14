@@ -82,12 +82,12 @@ section {
   gap: 1rem;
 }
 nav.card {
-  max-height: 200px;
+  max-height: 200px;    
 }
 .logo {
   zoom: 0.4;
 }
 nav:hover {
   transform: scale(1.1);
-}
+}   
 </style>

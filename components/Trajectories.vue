@@ -6,7 +6,7 @@
       title="Ensino Médio | 2013 - 2015"
       statusSize="large"
       statusColor="has-background-primary"
-      ><p class="has-text-justified">
+      ><p class="has-text-justified has-text-quinary">
         Desde os meus 6 anos, quando eu aprendi a ler, eu gostava de aprender
         sobre as coisas, e minha brincadeira favorita era ensinar um "público"
         invisível que assistia eu ministrar aulas riscando em um portão de ferro
@@ -26,7 +26,7 @@
       stepValue="1"
       statusSize="large"
       statusColor="has-background-primary"
-      ><p class="has-text-justified">
+      ><p class="has-text-justified has-text-quinary">
         Essa história é muito boa e tenho muito orgulho, eu consegui através dos
         meus estudos! O que eu gosto de frizar é: ESTUDOS! Eram oito mil alunos
         incritos no Academia Enem para 100 vagas de intercâmbio para a Espanha e
@@ -45,7 +45,7 @@
       statusSize="large"
       statusColor="has-background-primary"
     >
-      <p>
+      <p class="has-text-justified has-text-justified has-text-quinary">
         Meu primeiro emprego foi em uma fábrica de calçados. Eu fiz parte de uma
         turma de aprendizes que trabalhava na produção e eu amava cada dia de
         trabalho e nossas aulas durante a tarde. O projeto final foi desenhar e
@@ -65,7 +65,7 @@
       statusSize="large"
       statusColor="has-background-primary"
     >
-      <p>
+      <p class="has-text-justified has-text-quinary">
         Durante a graduação eu comecei a fazer projetos, principalmente focados
         em front-end, tive ajuda de profissionais incríveis que estão a muito
         tempo na carreira, participei de bootcamps e cursos voltados para área

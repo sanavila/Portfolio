@@ -18,12 +18,12 @@ $tertiary-light: findLightColor($tertiary);
 $tertiary-dark: findDarkColor($tertiary);
 $tertiary-invert: findColorInvert($tertiary);
 
-$quaternary: #63545B;
+$quaternary: rgb(89, 240, 240);
 $quaternary-light: findLightColor($quaternary);
 $quaternary-dark: findDarkColor($quaternary);
 $quaternary-invert: findColorInvert($quaternary);
 
-$quinary: #A81457;
+$quinary: #fff;
 $quinary-light: findLightColor($quinary);
 $quinary-dark: findDarkColor($quinary);
 $quinary-invert: findColorInvert($quinary);
