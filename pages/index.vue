@@ -1,8 +1,9 @@
-<template >
+<template>
   <section>
     <About />
     <Trajectories />
     <Repositories />
+    <Languages />
     <Libras />
   </section>
 </template>
@@ -14,14 +15,14 @@ import Trajectories from "~/components/Trajectories.vue";
 import Libras from "~/components/Libras.vue";
 
 export default {
-  name: "IndexPage",
-  components: {
-    About,
-    Repositories,
-    Languages,
-    Trajectories,
-    Libras,
-  },
+    name: "IndexPage",
+    components: {
+        About,
+        Repositories,
+        Languages,
+        Trajectories,
+        Libras
+    }
 };
 </script>
 <style scoped>

@@ -36,58 +36,58 @@
 
 <script>
 export default {
-  name: "Logo",
-  props: {
-    images: {
-      type: Array,
-      default: () => [],
+    name: "LogoLinguagens",
+    props: {
+        images: {
+            type: Array,
+            default: () => []
+        },
+        name: {
+            type: String,
+            default: "Logo"
+        },
+        title: {
+            type: String,
+            default: ""
+        },
+        titleColor: {
+            type: String,
+            default: ""
+        },
+        barColor: {
+            type: String,
+            default: ""
+        },
+        background: {
+            type: String,
+            default: "#120e0d"
+        }
     },
-    name: {
-      type: String,
-      default: "Logo",
+    data () {
+        return {
+            width: 500,
+            height: 500,
+            paddingX: 50,
+            gap: 10
+        };
     },
-    title: {
-      type: String,
-      default: "",
-    },
-    titleColor: {
-      type: String,
-      default: "",
-    },
-    barColor: {
-      type: String,
-      default: "",
-    },
-    background: {
-      type: String,
-      default: "#120e0d",
-    },
-  },
-  data() {
-    return {
-      width: 500,
-      height: 500,
-      paddingX: 50,
-      gap: 10,
-    };
-  },
-  computed: {
-    imageWidth() {
-      const value = Math.floor(
-        (this.width - (this.images.length * this.gap + 2 * this.paddingX)) /
+    computed: {
+        imageWidth () {
+            const value = Math.floor(
+                (this.width - (this.images.length * this.gap + 2 * this.paddingX)) /
           this.images.length
-      );
-      return value > this.width / 2 ? this.width / 2 : value;
+            );
+            return value > this.width / 2 ? this.width / 2 : value;
+        }
     },
-  },
-  methods: {
-    positionImage(index) {
-      return this.images.length < 2
-        ? this.width / 4
-        : index === 0
-        ? this.paddingX
-        : this.paddingX + (this.gap + this.imageWidth) * index;
-    },
-  },
+    methods: {
+        positionImage (index) {
+            return this.images.length < 2
+                ? this.width / 4
+                : index === 0
+                    ? this.paddingX
+                    : this.paddingX + (this.gap + this.imageWidth) * index;
+        }
+    }
 };
 </script>

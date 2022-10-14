@@ -10,28 +10,28 @@
 
 <script>
 export default {
-  name: 'DefaultLayout',
-  data () {
-    return {
-      items: [
-        {
-          title: 'Home',
-          icon: 'home',
-          to: { name: 'index' }
-        },
-        {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' }
-        }
-      ]
+    name: "DefaultLayout",
+    data () {
+        return {
+            items: [
+                {
+                    title: "Home",
+                    icon: "home",
+                    to: { name: "index" }
+                },
+                {
+                    title: "Inspire",
+                    icon: "lightbulb",
+                    to: { name: "inspire" }
+                }
+            ]
+        };
     }
-  }
-}
+};
 </script>
 <style scoped>
 section {
   background: #061928;
-  color: #1fddff;     
+  color: #1fddff;
 }
 </style>

@@ -5,9 +5,9 @@
     </h1>
     <section class="is-flex is-flex-wrap-wrap is-justify-content-center">
       <nav
-        class="card"
         v-for="(repo, index) of repoList"
         :key="`repo_${index}`"
+        class="card"
       >
         <a
           :href="repo.html_url"
@@ -19,27 +19,27 @@
           <img
             v-if="repo.language !== 'Vue'"
             :src="`https://raw.githubusercontent.com/${repo.full_name}/${repo.default_branch}/logo.webp`"
-            @error="(event) => defaultLogo(event, repo)"
             width="200px"
             :alt="repo.name.replaceAll('_', ' ')"
             :title="repo.name.replaceAll('_', ' ')"
-          />
+            @error="(event) => defaultLogo(event, repo)"
+          >
           <Logo
             v-else
             :name="repo.name.replaceAll('_', ' ')"
             :images="[require('@/assets/logos/logoVue.png')]"
             :title="repo.name.replaceAll('_', ' ')"
-            titleColor="rgb(72 199 142)"
-            barColor="rgb(72 199 142)"
+            title-color="rgb(72 199 142)"
+            bar-color="rgb(72 199 142)"
             class="logo"
           />
         </a>
       </nav>
       <nav
-        class="card"
-        v-show="isLoad"
         v-for="index of 15"
+        v-show="isLoad"
         :key="`repo_load_${index}`"
+        class="card"
       >
         <b-skeleton width="200px" height="200px" />
       </nav>
@@ -51,35 +51,35 @@ import { mapActions, mapGetters } from "vuex";
 import Logo from "./Logo.vue";
 
 export default {
-  name: "Repositories",
-  data() {
-    return {
-      isLoad: false,
-    };
-  },
-  computed: {
-    ...mapGetters({
-      repoList: "getRepoList",
-    }),
-  },
-  methods: {
-    ...mapActions({
-      listRequest: "repoListRequestAction",
-    }),
-    async loadRepoList() {
-      this.isLoad = true;
-      await this.listRequest();
-      this.isLoad = false;
+    name: "RepositoriesProjects",
+    components: { Logo },
+    data () {
+        return {
+            isLoad: false
+        };
     },
-    defaultLogo(event, repo) {
-      event.target.src = require("@/assets/images/default.webp");
-      repo.status = "error";
+    computed: {
+        ...mapGetters({
+            repoList: "getRepoList"
+        })
     },
-  },
-  beforeMount() {
-    this.loadRepoList();
-  },
-  components: { Logo },
+    beforeMount () {
+        this.loadRepoList();
+    },
+    methods: {
+        ...mapActions({
+            listRequest: "repoListRequestAction"
+        }),
+        async loadRepoList () {
+            this.isLoad = true;
+            await this.listRequest();
+            this.isLoad = false;
+        },
+        defaultLogo (event, repo) {
+            event.target.src = require("@/assets/images/default.webp");
+            repo.status = "error";
+        }
+    }
 };
 </script>
 <style lang="scss" scoped>

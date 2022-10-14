@@ -1,12 +1,15 @@
 <template>
   <aside>
-    <h1 class="is-size-1 is-flex is-justify-content-center">Quem sou eu?</h1>
+    <h1 class="is-size-1 is-flex is-justify-content-center">
+      Quem sou eu?
+    </h1>
     <timeline-item
-      statusIcon="school"
+      status-icon="school"
       title="Ensino Médio | 2013 - 2015"
-      statusSize="large"
-      statusColor="has-background-primary"
-      ><p class="has-text-justified has-text-quinary">
+      status-size="large"
+      status-color="has-background-primary"
+    >
+      <p class="has-text-justified has-text-quinary">
         Desde os meus 6 anos, quando eu aprendi a ler, eu gostava de aprender
         sobre as coisas, e minha brincadeira favorita era ensinar um "público"
         invisível que assistia eu ministrar aulas riscando em um portão de ferro
@@ -18,15 +21,16 @@
         eu dei passos em direção a outros caminhos, eu pensei querer se
         enfemeira, até caminhei uma parte boa dessa trilha, porém, oportunidades
         de se tornar uma dev surgiram após essa época da minha vida.
-      </p></timeline-item
-    >
+      </p>
+    </timeline-item>
     <timeline-item
-      statusIcon="airplane"
+      status-icon="airplane"
       title="Intercâmbio Linguístico | 2018"
-      stepValue="1"
-      statusSize="large"
-      statusColor="has-background-primary"
-      ><p class="has-text-justified has-text-quinary">
+      step-value="1"
+      status-size="large"
+      status-color="has-background-primary"
+    >
+      <p class="has-text-justified has-text-quinary">
         Essa história é muito boa e tenho muito orgulho, eu consegui através dos
         meus estudos! O que eu gosto de frizar é: ESTUDOS! Eram oito mil alunos
         incritos no Academia Enem para 100 vagas de intercâmbio para a Espanha e
@@ -36,14 +40,14 @@
         de diversas áreas e pude ter muitas conversas legais sobre algumas
         carreiras profissionais. Fui com uma bagagem de roupas e voltei com
         muito mais que isso. Eu tinha que começar a traçar um plano de carreira!
-      </p></timeline-item
-    >
+      </p>
+    </timeline-item>
     <timeline-item
-      statusIcon="account-hard-hat"
+      status-icon="account-hard-hat"
       title="Primeiro Emprego | 2020"
-      stepValue="3"
-      statusSize="large"
-      statusColor="has-background-primary"
+      step-value="3"
+      status-size="large"
+      status-color="has-background-primary"
     >
       <p class="has-text-justified has-text-justified has-text-quinary">
         Meu primeiro emprego foi em uma fábrica de calçados. Eu fiz parte de uma
@@ -59,11 +63,11 @@
       </p>
     </timeline-item>
     <timeline-item
-      statusIcon="school"
+      status-icon="school"
       title="Graduação | 2020 - Atualmente"
-      stepValue="1"
-      statusSize="large"
-      statusColor="has-background-primary"
+      step-value="1"
+      status-size="large"
+      status-color="has-background-primary"
     >
       <p class="has-text-justified has-text-quinary">
         Durante a graduação eu comecei a fazer projetos, principalmente focados
@@ -71,8 +75,13 @@
         tempo na carreira, participei de bootcamps e cursos voltados para área
         que me fizeram abrir muito mais a mente e saber das possíbilidades do
         que nós da área tech podemos ser capazes de fazer e o quanto nosso
-        trabalho é importante para todas as áreas. 
+        trabalho é importante para todas as áreas.
       </p>
     </timeline-item>
   </aside>
 </template>
+<script>
+export default {
+    name: "TrajectoriesLife"
+};
+</script>

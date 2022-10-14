@@ -1,4 +1,3 @@
-<!-- eslint-disable prettier/prettier -->
 <template>
   <section class="timeline">
     <div class="timeline-tag">
@@ -26,7 +25,9 @@
     <div class="timeline-panel">
       <div class="timeline-heading">
         <slot name="title" />
-        <h4 v-if="title" class="timeline-title is-size-5">{{ title }}</h4>
+        <h4 v-if="title" class="timeline-title is-size-5">
+          {{ title }}
+        </h4>
       </div>
       <div class="timeline-body">
         <slot />
@@ -39,8 +40,8 @@
 import Script from "./TimelineItem.script";
 
 export default {
-  name: "TimelineItem",
-  ...Script,
+    name: "TimelineItem",
+    ...Script
 };
 </script>
 
