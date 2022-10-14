@@ -1,4 +1,4 @@
-export const Script = {
+export default {
   props: {
     title: {
       type: String

@@ -1,11 +1,13 @@
 <template>
   <aside>
-    <h1 class="is-size-1 is-flex is-justify-content-center">Conheça meus projetos</h1>
+    <h1 class="is-size-1 is-flex is-justify-content-center">
+      Conheça meus projetos
+    </h1>
     <section class="is-flex is-flex-wrap-wrap is-justify-content-center">
       <nav
         class="card"
         v-for="(repo, index) of repoList"
-        :key="`repo_${index}`"  
+        :key="`repo_${index}`"
       >
         <a
           :href="repo.html_url"
@@ -33,11 +35,14 @@
           />
         </a>
       </nav>
-      <template v-if="isLoad">
-        <nav class="card" v-for="index of 15" :key="`repo_${index}`">
-          <b-skeleton width="200px" height="200px" />
-        </nav>
-      </template>
+      <nav
+        class="card"
+        v-show="isLoad"
+        v-for="index of 15"
+        :key="`repo_load_${index}`"
+      >
+        <b-skeleton width="200px" height="200px" />
+      </nav>
     </section>
   </aside>
 </template>
@@ -82,12 +87,12 @@ section {
   gap: 1rem;
 }
 nav.card {
-  max-height: 200px;    
+  max-height: 200px;
 }
 .logo {
   zoom: 0.4;
 }
 nav:hover {
   transform: scale(1.1);
-}   
+}
 </style>

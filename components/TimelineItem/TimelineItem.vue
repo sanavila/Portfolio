@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import { Script } from "./TimelineItem.script";
+import Script from "./TimelineItem.script";
 
 export default {
   name: "TimelineItem",

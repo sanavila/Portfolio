@@ -1,4 +1,6 @@
 export default {
+  target: 'static',
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'portfolio',
@@ -45,8 +47,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true
   },
 
-  buildDir: "docs"
-  
+  generate: {
+    dir: 'docs'
+  },
+
+  router: {
+    base: '/Portfolio/'
+  }
 }
