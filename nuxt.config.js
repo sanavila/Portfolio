@@ -57,6 +57,6 @@ export default {
     },
 
     router: {
-        base: "/Portfolio/"
+        base: "./"
     }
 };
