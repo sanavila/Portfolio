@@ -51,6 +51,9 @@ jobs:
       - name: 🏗️ Build project
         run: yarn generate
 
+      - name: 📋 Create not found page
+        run: cp 404.md docs/404.md
+
       - name: Deploy 🧪
         uses: test-room-7/action-update-file@v1
         with:

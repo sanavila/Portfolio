@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h1 class="is-size-1 is-flex is-justify-content-center has-text-primary">
+    <h1 class="is-size-1 is-flex is-justify-content-center">
       Bem Vindo(a)!
     </h1>
     <section class="is-flex pl-4">

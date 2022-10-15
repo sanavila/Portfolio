@@ -49,14 +49,17 @@ export default {
     ],
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
-        extractCSS: true
+        extractCSS: true,
+        publicPath: 'public'
+
     },
 
     generate: {
-        dir: "docs"
+        dir: "docs",
+        fallback: "404.html"
     },
 
     router: {
-        base: "./"
+        base: "/Portfolio"
     }
 };
