@@ -91,3 +91,10 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+.size-150 image {
+  height: 150px !important;
+  y: 73px;
+}
+</style>

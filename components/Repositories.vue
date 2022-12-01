@@ -16,23 +16,51 @@
           :aria-label="repo.description"
           target="_blank"
         >
-          <img
-            v-if="repo.language !== 'Vue'"
+        <Logo
+          v-if="repo.language === 'Vue'"
+          :name="repo.name.replaceAll('_', ' ')"
+          :images="[require('@/assets/logos/logoVue.png')]"
+          :title="truncate(21, repo.name.replaceAll('_', ' '))"
+          title-color="rgb(72 199 142)"
+          bar-color="rgb(72 199 142)"
+          class="logo size-150"
+        />
+        <Logo
+          v-else-if="repo.language === 'JavaScript' "
+          :name="repo.name.replaceAll('_', ' ')"
+          :images="[require('@/assets/images/javascript.png')]"
+          :title="truncate(21, repo.name.replaceAll('_', ' '))"
+          title-color="#f7df1b"
+          bar-color="#f7df1b"
+          class="logo size-150"
+        />
+        <Logo
+          v-else-if="repo.language === 'TypeScript' "
+          :name="repo.name.replaceAll('_', ' ')"
+          :images="[require('@/assets/logos/typescript.png')]"
+          :title="truncate(21, repo.name.replaceAll('_', ' '))"
+          title-color="#FCFCFC"
+          bar-color="#FCFCFC"
+          class="logo size-150"
+        />
+        <Logo
+          v-else-if="repo.language === 'CSS'"
+          :name="repo.name.replaceAll('_', ' ')"
+          :images="[require('@/assets/images/css.png')]"
+          :title="truncate(21, repo.name.replaceAll('_', ' '))"
+          title-color="#FCFCFC"
+          bar-color="#FCFCFC"
+          class="logo size-150"
+        />
+        <img
+            v-else
             :src="`https://raw.githubusercontent.com/${repo.full_name}/${repo.default_branch}/logo.webp`"
+            :callback="repo.language"
             width="200px"
             :alt="repo.name.replaceAll('_', ' ')"
-            :title="repo.name.replaceAll('_', ' ')"
+            :title="truncate(21, repo.name.replaceAll('_', ' '))"
             @error="(event) => defaultLogo(event, repo)"
           >
-          <Logo
-            v-else
-            :name="repo.name.replaceAll('_', ' ')"
-            :images="[require('@/assets/logos/logoVue.png')]"
-            :title="repo.name.replaceAll('_', ' ')"
-            title-color="rgb(72 199 142)"
-            bar-color="rgb(72 199 142)"
-            class="logo"
-          />
         </a>
       </nav>
       <nav
@@ -47,6 +75,7 @@
   </aside>
 </template>
 <script>
+import { truncate } from "@/static/utils";
 import { mapActions, mapGetters } from "vuex";
 import Logo from "./Logo.vue";
 
@@ -55,7 +84,8 @@ export default {
     components: { Logo },
     data () {
         return {
-            isLoad: false
+            isLoad: false,
+            truncate
         };
     },
     computed: {
