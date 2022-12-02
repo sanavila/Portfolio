@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002FPortfolio\u002Fpublic\u002Fstatic\u002F1670018023",layout:"default",error:a,state:{githubStore:{repoList:[]}},serverRendered:true,routePath:"\u002F",config:{_app:{basePath:"\u002FPortfolio\u002F",assetsPath:"\u002FPortfolio\u002Fpublic\u002F",cdnURL:a}}}}(null));
