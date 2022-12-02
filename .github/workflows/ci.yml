@@ -5,10 +5,18 @@ on:
     branches:
       - main
       - master
+    paths:
+      - '**/**.js'
+      - '**/**.css'
+      - '**/**.vue'
   pull_request:
     branches:
       - main
       - master
+    paths:
+      - '**/**.js'
+      - '**/**.css'
+      - '**/**.vue'
 
 jobs:
   ci:
